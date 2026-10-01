@@ -1,10 +1,10 @@
-# SlaTracker-Core ⏱️
+# SlaTracker-Core 
 
 Engine/API RESTful desarrollado en **.NET 8** para la gestión, seguimiento y cálculo automatizado de Acuerdos de Nivel de Servicio (SLA) en tickets de soporte e incidentes operativos.
 
 ---
 
-## 🏛️ Arquitectura del Proyecto
+## Arquitectura del Proyecto
 
 El proyecto implementa principios de **Clean Architecture** y **SOLID**, separando las responsabilidades en capas desacopladas:
 
@@ -21,14 +21,14 @@ SlaTracker-Core/
 │   └── SlaStatus.cs               # Estados de cumplimiento de SLA
 └── Program.cs                     # Configuración de servicios y Middleware HTTP
 
-📊 Reglas de Negocio (SLA Calculation)
+Reglas de Negocio (SLA Calculation)
 El motor evalúa dinámicamente el porcentaje de tiempo transcurrido respecto al objetivo (TargetHours):
 | Porcentaje Transcurrido | Estado SLA (SlaStatus) | Descripción |
 |---|---|---|
 | < 80% | OnTime | En plazo sin riesgo. |
 | 80% - 99% | NearBreach | Riesgo crítico de incumplimiento (alerta activa). |
 | ≥ 100% | Breached | SLA incumplido. |
-🔌 API Endpoints & Ejemplos
+API Endpoints & Ejemplos
 1. Crear un Ticket
  * URL: POST /api/v1/tickets
  * Content-Type: application/json
@@ -60,11 +60,11 @@ Response (201 Created):
   }
 ]
 
-🛠️ Tech Stack & Patrones
+Tech Stack & Patrones
  * Lenguaje/Framework: C# / .NET 8 (Web API)
  * Documentación: Swagger / OpenAPI 3.0
  * Patrones: Dependency Injection (Scoped), Repository-like pattern, Clean Layering.
-🚀 Ejecución Local
+ Ejecución Local
 # Restaurar dependencias y compilar
 dotnet build
 
