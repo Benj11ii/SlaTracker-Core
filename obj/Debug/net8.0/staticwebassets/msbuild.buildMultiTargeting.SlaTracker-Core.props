@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../build/SlaTracker-Core.props" />
-</Project>
