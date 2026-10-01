@@ -2,7 +2,6 @@ using SlaTracker_Core.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Registrar controladores y servicios de negocio (Dependency Injection)
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
